@@ -5,8 +5,8 @@ import time
 # Node 1 = Your Phone (Check IP in Termux)
 # Node 2 = Your Laptop (Localhost)
 NODES = [
-    {'ip': '10.161.164.115', 'port': 5001},  # <--- REPLACE WITH PHONE IP
-    {'ip': '127.0.0.1',    'port': 5002}   # <--- Laptop local server
+    {'ip': '', 'port': 5001},  # <--- REPLACE WITH PHONE IP
+    {'ip': '12',    'port': 5002}   # <--- Laptop local server
 ]
 
 SEPARATOR = "<SEPARATOR>"

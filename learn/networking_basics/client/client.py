@@ -5,7 +5,7 @@ import time
 
 SEPARATOR = "<SEPARATOR>"
 BUFFER_SIZE = 4096
-HOST = '10.161.164.115'
+HOST = 'your ip'
 PORT = 5001
 
 def send_file(filename):

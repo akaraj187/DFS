@@ -19,6 +19,21 @@ The system follows a Master-Worker architecture simulation:
 2.  **The Nodes (Storage):** Three separate directories (`node_1`, `node_2`, `node_3`) acting as independent servers.
 3.  **The Logic (Distributor):** Uses Round-Robin scheduling to distribute chunks and ensures `Chunk N` is stored on `Node i` and `Node i+1`.
 
+
+## Networked Mobile and Laptop as server to store data
+
+[ CLIENT (Laptop) ]
+             | Reads File
+             | Splits into 1MB Chunks
+             |
+      /------+------\
+      |             |
+ [ SOCKET 1 ]   [ SOCKET 2 ]
+      |             |
+      v             v
+ [ NODE 1 ]     [ NODE 2 ]
+ (Android)      (Laptop)
+  Storage        Storage
 ## 💻 How to Run
 ### Prerequisites
 * Python 3.x

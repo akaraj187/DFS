@@ -22,18 +22,40 @@ The system follows a Master-Worker architecture simulation:
 
 ## Networked Mobile and Laptop as server to store data
 
-[ CLIENT (Laptop) ]
-             | Reads File
-             | Splits into 1MB Chunks
-             |
-      /------+------\
-      |             |
- [ SOCKET 1 ]   [ SOCKET 2 ]
-      |             |
-      v             v
- [ NODE 1 ]     [ NODE 2 ]
- (Android)      (Laptop)
-  Storage        Storage
+       +-----------------------+
+       |    CLIENT (Laptop)    |
+       +-----------+-----------+
+                   |
+         +---------v---------+
+         |     Reads File    |
+         +---------+---------+
+                   |
+      +------------v------------+
+      |  Splits into 1MB Chunks |
+      +------------+------------+
+                   |
+          /--------+--------\
+          |                 |
+    +-----v------+    +-----v------+
+    |  SOCKET 1  |    |  SOCKET 2  |
+    +-----+------+    +-----+------+
+          |                 |
+    +-----v------+    +-----v------+
+    |   NODE 1   |    |   NODE 2   |
+    |  (Android) |    |  (Laptop)  |
+    +------------+    +------------+
+
+
+  ![WhatsApp Image 2026-01-09 at 2 03 27 PM](https://github.com/user-attachments/assets/072efc86-dd20-4667-94f5-bd876c2c48c8)
+
+  
+
+  
+
+<img width="1626" height="915" alt="Screenshot (87)" src="https://github.com/user-attachments/assets/31b442e3-cc49-4965-93e0-ce785771a4d4" />
+
+  
+
 ## 💻 How to Run
 ### Prerequisites
 * Python 3.x

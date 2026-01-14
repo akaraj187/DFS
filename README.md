@@ -81,12 +81,3 @@ The system follows a Master-Worker architecture simulation:
     * Run the retrieval function.
     * Watch the console logs: You will see it detecting the failure and recovering from `node_2` or `node_3`.
 
-## 🧠 What I Learned
-* **Systems Programming:** Handling binary file I/O and buffer management.
-* **Distributed Concepts:** Implementing **Striping** for performance and **Mirroring** for redundancy.
-* **Failover Logic:** Writing code that anticipates hardware failure (FileNotFoundError) and reroutes requests.
-
-## 🔮 Future Roadmap
-* [ ] Implement a centralized **Metadata Server** (NameNode) to map filenames to block IDs.
-* [ ] Add **Heartbeat signals** to detect dead nodes automatically.
-* [ ] Upgrade from Replication to **Erasure Coding** (RAID 5 logic) to save storage space.
